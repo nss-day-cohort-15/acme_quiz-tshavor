@@ -1,0 +1,22 @@
+{
+    "types": [
+        {
+            "id": 0,
+            "category": 0,
+            "name": "Military/Law Enforcement Only",
+            "description": "Explosives intended for use by Military/Law Enforcement personnel only"
+        },
+        {
+            "id": 1,
+            "category": 1,
+            "name": "Demolitions Use Only",
+            "description": "Explosives intended for use within demolition/construction environments only"
+        },
+        {
+            "id": 2,
+            "category": 2,
+            "name": "Civilian Applications",
+            "description": "Explosives intended for use by the general population"
+        }
+    ]
+}
