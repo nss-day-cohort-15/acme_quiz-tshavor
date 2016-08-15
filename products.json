@@ -27,86 +27,86 @@
         },
         "Crossette": {
             "id": 4,
-            "type": 0,
+            "type": 2,
             "name": "Crossette",
             "description": "An effect that splits in the sky, for example a coloured star which then splits into four or five other coloured stars."
         },
         "Hummer": {
             "id": 5,
-            "type": 0,
+            "type": 2,
             "name": "Hummer",
             "description": "A firework shell or projectile that makes a “humming” noise."
         },
         "Sparklers": {
             "id": 6,
-            "type": 0,
+            "type": 2,
             "name": "Sparklers",
             "description": "A firework suitable for children aged 8 and up."
         },
         "Peony": {
             "id": 7,
-            "type": 0,
+            "type": 2,
             "name": "Peony",
             "description": "Well-used term to describe an effect which is essentially an expanding sphere of stars."
         },
 
         "Fragmentation grenade": {
             "id": 8,
-            "type": 0,
+            "type": 2,
             "name": "Fragmentation grenade",
             "description": "These grenades are used to produce casualties by high-velocity projection of fragments."
         },
         "Illuminating grenade": {
             "id": 9,
-            "type": 0,
+            "type": 2,
             "name": "Illuminating grenade",
             "description": "This grenade is used to provide illumination of terrain and targets."
         },
         "Chemical grenade": {
             "id": 10,
-            "type": 0,
+            "type": 2,
             "name": "Chemical grenade",
             "description": "These grenades are used for incendiary, screening, signaling, training, or riot-control."
         },
         "Offensive grenade": {
             "id": 11,
-            "type": 0,
+            "type": 2,
             "name": "Offensive grenade",
             "description": "This grenade is used for blast effect."
         },
         "Practice and Training grenade": {
             "id": 12,
-            "type": 0,
+            "type": 2,
             "name": "Practice and Training grenade",
             "description": "These grenades are for training personnel in use, care and handling of service grenades."
         },
         "Nonlethal grenade": {
             "id": 13,
-            "type": 0,
+            "type": 2,
             "name": "Nonlethal grenade",
             "description": "This grenade is used for diversionary purposes or when lethal force is not desired."
         },
         "Dynamite": {
             "id": 14,
-            "type": 0,
+            "type": 1,
             "name": "Dynamite ",
             "description": "n explosive made of nitroglycerin, sorbents (such as powdered shells or clay) and stabilizers."
         },
         "Composition C-4": {
             "id": 15,
-            "type": 0,
+            "type": 1,
             "name": "Composition C-4",
             "description": "C-4 has a texture similar to modeling clay and can be molded into any desired shape."
         },
         "M18A1 Claymore mine": {
             "id": 16,
-            "type": 0,
+            "type": 1,
             "name": "M18A1 Claymore mine ",
             "description": "a directional anti-personnel mine used by the United States Armed Forces."
         },
         "Semtex": {
             "id": 17,
-            "type": 0,
+            "type": 1,
             "name": "Semtex",
             "description": "a general-purpose plastic explosive used in commercial blasting and demolition."
 
