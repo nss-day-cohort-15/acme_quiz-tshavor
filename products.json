@@ -90,7 +90,7 @@
             "id": 14,
             "type": 1,
             "name": "Dynamite ",
-            "description": "n explosive made of nitroglycerin, sorbents (such as powdered shells or clay) and stabilizers."
+            "description": "An explosive made of nitroglycerin, sorbents (such as powdered shells or clay) and stabilizers."
         },
         "Composition C-4": {
             "id": 15,
@@ -102,13 +102,13 @@
             "id": 16,
             "type": 1,
             "name": "M18A1 Claymore mine ",
-            "description": "a directional anti-personnel mine used by the United States Armed Forces."
+            "description": "A directional anti-personnel mine used by the United States Armed Forces."
         },
         "Semtex": {
             "id": 17,
             "type": 1,
             "name": "Semtex",
-            "description": "a general-purpose plastic explosive used in commercial blasting and demolition."
+            "description": "A general-purpose plastic explosive used in commercial blasting and demolition."
 
         }
       }
