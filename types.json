@@ -3,20 +3,38 @@
         {
             "id": 0,
             "category": 0,
-            "name": "Military/Law Enforcement Only",
-            "description": "Explosives intended for use by Military/Law Enforcement personnel only"
+            "name": "Low Risk Fireworks",
+            "description": "Fireworks acceptable for use by all ages"
         },
         {
             "id": 1,
-            "category": 1,
-            "name": "Demolitions Use Only",
-            "description": "Explosives intended for use within demolition/construction environments only"
+            "category": 0,
+            "name": "Medium Risk Fireworks",
+            "description": "Fireworks recommended for use by adults or children >12 years old"
         },
         {
             "id": 2,
-            "category": 2,
+            "category": 0,
+            "name": "High Risk Fireworks",
+            "description": "Explosives recommended for use by adults only"
+        }
+        {
+            "id": 3,
+            "category": 1,
+            "name": "Military/Law Enforcement",
+            "description": "Explosives intended for use by Military/Law Enforcement personnel only"
+        }
+        {
+            "id": 4,
+            "category": 1,
             "name": "Civilian Applications",
             "description": "Explosives intended for use by the general population"
+        }
+        {
+            "id": 5,
+            "category": 1,
+            "name": "Construction Applications",
+            "description": "Explosives intended for use within demolition/construction environments only"
         }
     ]
 }

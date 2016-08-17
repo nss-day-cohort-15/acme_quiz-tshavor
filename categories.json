@@ -2,19 +2,11 @@
     "categories": [
         {
             "id": 0,
-            "name": "Ammunition"
-        },
-        {
-            "id": 1,
-            "name": "Charges"
-        },
-        {
-            "id": 2,
             "name": "Fireworks"
         },
         {
-            "id": 3,
-           "name": "Grenades"
+            "id": 1,
+            "name": "Destructives"
         }
     ]
 }
