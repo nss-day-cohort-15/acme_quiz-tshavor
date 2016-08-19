@@ -1,116 +1,117 @@
 {
     "products": [
     	{
-        "5.56 x 45mm NATO": {
-            "id": 0,
-            "type": 4,
-            "name": "5.56 x 45mm NATO",
-            "description": "NATO military reference round using during combat operations."
-        },
-        "7.62 x 54mm Russian": {
-            "id": 1,
-            "type": 4,
-            "name": "7.62 x 54mm Russian",
-            "description": "Eastern Bloc military reference round using during combat operations."
-        },
-        ".50 BMG": {
-            "id": 2,
-            "type": 4,
-            "name": ".50 BMG",
-            "description": "Sniper rounds used for long-distance pacification."
-        },
-        "7.62×51mm NATO": {
-            "id": 3,
-            "type": 3,
-            "name": "7.62×51mm NATO",
-            "description": "Has been used in machine guns by the United States Armed Forces since the late-1970s."
-        },
-        "Cowboy": {
-            "id": 4,
-            "type": 0,
-            "name": "Cowboy",
-            "description": "An effect that splits in the sky, for example a coloured star which then splits into four or five other coloured stars."
-        },
-        "Dog Poo": {
-            "id": 5,
-            "type": 0,
-            "name": "Dog Poo",
-            "description": "A firework that mimics a dog going to the bathroom on your street."
-        },
-        "Sparklers": {
-            "id": 6,
-            "type": 0,
-            "name": "Sparklers",
-            "description": "A firework suitable for children aged 8 and up."
-        },
-        "Peony": {
-            "id": 7,
-            "type": 1,
-            "name": "Peony",
-            "description": "Well-used term to describe an effect which is essentially an expanding sphere of stars."
-        },
-        "Dragon": {
-            "id": 8,
-            "type": 1,
-            "name": "Dragon",
-            "description": "Well-used term to describe an effect which is essentially an expanding sphere of stars."
-        },
-        "Seagull": {
-            "id": 9,
-            "type": 1,
-            "name": "Seagull",
-            "description": "Well-used term to describe an effect which is essentially an expanding sphere of stars."
-        },
-        "Terminator": {
-            "id": 10,
-            "type": 2,
-            "name": "Terminator",
-            "description": "Well-used term to describe an effect which is essentially an expanding sphere of stars."
-        },
-        "BFG": {
-            "id": 11,
-            "type": 2,
-            "name": "BFG",
-            "description": "Well-used term to describe an effect which is essentially an expanding sphere of stars."
-        },
-        "Chuck Norris": {
-            "id": 12,
-            "type": 2,
-            "name": "Chuck Norris",
-            "description": "Well-used term to describe an effect which is essentially an expanding sphere of stars."
-        },
-        "Fragmentation grenade": {
-            "id": 13,
-            "type": 3,
-            "name": "Fragmentation grenade",
-            "description": "These grenades are used to produce casualties by high-velocity projection of fragments."
-        },
-        "Dynamite": {
-            "id": 14,
-            "type": 5,
-            "name": "Dynamite ",
-            "description": "An explosive made of nitroglycerin, sorbents (such as powdered shells or clay) and stabilizers."
-        },
-        "Composition C-4": {
-            "id": 15,
-            "type": 5,
-            "name": "Composition C-4",
-            "description": "C-4 has a texture similar to modeling clay and can be molded into any desired shape."
-        },
-        "Semtex": {
-            "id": 16,
-            "type": 5,
-            "name": "Semtex",
-            "description": "A general-purpose plastic explosive used in commercial blasting and demolition."
+            "5.56 x 45mm NATO": {
+                "id": 0,
+                "type": 4,
+                "name": "5.56 x 45mm NATO",
+                "description": "NATO military reference round using during combat operations."
+            },
+            "7.62 x 54mm Russian": {
+                "id": 1,
+                "type": 4,
+                "name": "7.62 x 54mm Russian",
+                "description": "Eastern Bloc military reference round using during combat operations."
+            },
+            ".50 BMG": {
+                "id": 2,
+                "type": 4,
+                "name": ".50 BMG",
+                "description": "Sniper rounds used for long-distance pacification."
+            },
+            "7.62×51mm NATO": {
+                "id": 3,
+                "type": 3,
+                "name": "7.62×51mm NATO",
+                "description": "Has been used in machine guns by the United States Armed Forces since the late-1970s."
+            },
+            "Cowboy": {
+                "id": 4,
+                "type": 0,
+                "name": "Cowboy",
+                "description": "An effect that splits in the sky, for example a coloured star which then splits into four or five other coloured stars."
+            },
+            "Dog Poo": {
+                "id": 5,
+                "type": 0,
+                "name": "Dog Poo",
+                "description": "A firework that mimics a dog going to the bathroom on your street."
+            },
+            "Sparklers": {
+                "id": 6,
+                "type": 0,
+                "name": "Sparklers",
+                "description": "A firework suitable for children aged 8 and up."
+            },
+            "Peony": {
+                "id": 7,
+                "type": 1,
+                "name": "Peony",
+                "description": "Well-used term to describe an effect which is essentially an expanding sphere of stars."
+            },
+            "Dragon": {
+                "id": 8,
+                "type": 1,
+                "name": "Dragon",
+                "description": "Well-used term to describe an effect which is essentially an expanding sphere of stars."
+            },
+            "Seagull": {
+                "id": 9,
+                "type": 1,
+                "name": "Seagull",
+                "description": "Well-used term to describe an effect which is essentially an expanding sphere of stars."
+            },
+            "Terminator": {
+                "id": 10,
+                "type": 2,
+                "name": "Terminator",
+                "description": "Well-used term to describe an effect which is essentially an expanding sphere of stars."
+            },
+            "BFG": {
+                "id": 11,
+                "type": 2,
+                "name": "BFG",
+                "description": "Well-used term to describe an effect which is essentially an expanding sphere of stars."
+            },
+            "Chuck Norris": {
+                "id": 12,
+                "type": 2,
+                "name": "Chuck Norris",
+                "description": "Well-used term to describe an effect which is essentially an expanding sphere of stars."
+            },
+            "Fragmentation grenade": {
+                "id": 13,
+                "type": 3,
+                "name": "Fragmentation grenade",
+                "description": "These grenades are used to produce casualties by high-velocity projection of fragments."
+            },
+            "Dynamite": {
+                "id": 14,
+                "type": 5,
+                "name": "Dynamite ",
+                "description": "An explosive made of nitroglycerin, sorbents (such as powdered shells or clay) and stabilizers."
+            },
+            "Composition C-4": {
+                "id": 15,
+                "type": 5,
+                "name": "Composition C-4",
+                "description": "C-4 has a texture similar to modeling clay and can be molded into any desired shape."
+            },
+            "Semtex": {
+                "id": 16,
+                "type": 5,
+                "name": "Semtex",
+                "description": "A general-purpose plastic explosive used in commercial blasting and demolition."
 
-        },
-        "Chemical Grenade": {
-            "id": 17,
-            "type": 3,
-            "name": "Chemical Grenade",
-            "description": "A grenade containing irritant chemicals."
+            },
+            "Chemical Grenade": {
+                "id": 17,
+                "type": 3,
+                "name": "Chemical Grenade",
+                "description": "A grenade containing irritant chemicals."
+          }
       }
-      }]
+  ]
 }
 
 

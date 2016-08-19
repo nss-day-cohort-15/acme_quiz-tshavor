@@ -1,34 +1,15 @@
 console.log("acme.js has loaded");
 
-// JQUERY EVENT LISTENERS HERE-they work fine
+// XML-HTTP CALL HERE (WITH PROMISES, USING PROMISE.ALL)://///////////////////////////////////////////
 
-$('#ammunition').on("click", function (event){
-console.log("event", event);
-})
-
-$('#charges').on("click", function (event){
-console.log("event", event);
-})
-
-$('#fireworks').on("click", function (event){
-console.log("event", event);
-})
-
-$('#grenades').on("click", function (event){
-console.log("event", event);
-})
-
-// XML-HTTP CALL HERE (WITH PROMISES)://///////////////////////////////////////////
-
-var Factory = (function (fact) {
-
+var Warehouse = (function (ware) {
 
 var categories = null;
 var types = null;
 var products = null;
 
-
-    fact.loadProducts = function (putThingsInDom){
+    ware.loadProducts = function (insertinDom){
+      console.log ("function loadProducts is ready!")
         Promise.all ([
             $.getJSON('categories.json'),
             $.getJSON('types.json'),
@@ -39,39 +20,80 @@ var products = null;
                 categories = catalog[0].categories
                 types = catalog[1].types
                 products = catalog[2].products[0]
-                putThingsInDom(categories,types,products)
-
+                insertinDom(categories,types,products)
+                console.log(categories);
                 })
-
             }
 
-return fact;
+return ware;
 
 })
 
-(Factory || {})
+(Warehouse || {})
 
 
+// THIS EXAMPLE IS FROM THE CLASS RESOURSES SECTION/////////////
 
+// This function does one thing, and returns a promise
+// var firstAJAX = function() {
+//   return new Promise((resolve, reject) => {
+//     $.ajax({
+//       // url: "https://nss-demo-instructor.firebaseio.com/songs.json"
+//       url: "categories.json"
+//     }).done(function(data) {
+//       resolve(data);
+//     }).fail(function(xhr, status, error) {
+//       reject(error);
+//     });
+//   }
+// )};
 
+// // This function does one thing, and returns a promise
+// var secondAJAX = function(result_of_firstXHR) {
+//   return new Promise((resolve, reject) => {
+//     $.ajax({
+//       // url: "https://nss-demo-instructor.firebaseio.com/more-songs-info.json",
+//       url: "types.json"
+//       data: result_of_firstXHR
+//     }).done(function(data) {
+//       resolve(data);
+//     }).fail(function(xhr, status, error) {
+//       reject(error);
+//     });
+//   }
+// )};
 
+// // This function does one thing, and returns a promise
+// var thirdAJAX = function(result_of_secondXHR) {
+//   return new Promise((resolve, reject) => {
+//     $.ajax({
+//       // url: "https://nss-demo-instructor.firebaseio.com/song-details.json",
+//       url:"products.json"
+//       data: result_of_secondXHR
+//     }).done(function(data) {
+//       resolve(data);
+//     }).fail(function(xhr, status, error) {
+//       reject(error);
+//     });
+//   }
+// )};
 
+/*
+  Now we use those Promises to describe the order of execution,
+  and how data flows between each one.
 
-
-
-
-
-
-
-
-
-
-
-
-// OUTPUT STRING CREATION HERE:////////////////////////////
-
-
-
-
+  Note how the resolve callback function, itself, returns another
+  promise. This is how you can chain promises, and dictate the
+  order of execution of multiple aynschronous operations.
+ */
+// firstAJAX()
+//   .then(function(data1) {
+//     return secondAJAX(data1);
+//   })
+//   .then(function(data2) {
+//     return thirdAJAX(data2);
+//   }).then(function(data3){
+//     console.log(data3);
+//   });
 
 

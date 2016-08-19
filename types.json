@@ -17,19 +17,19 @@
             "category": 0,
             "name": "High Risk Fireworks",
             "description": "Explosives recommended for use by adults only"
-        }
+        },
         {
             "id": 3,
             "category": 1,
             "name": "Military/Law Enforcement",
             "description": "Explosives intended for use by Military/Law Enforcement personnel only"
-        }
+        },
         {
             "id": 4,
             "category": 1,
             "name": "Civilian Applications",
             "description": "Explosives intended for use by the general population"
-        }
+        },
         {
             "id": 5,
             "category": 1,

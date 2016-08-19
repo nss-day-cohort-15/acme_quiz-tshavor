@@ -1,31 +1,27 @@
-var Factory = (function(fact) {
+var Warehouse = (function(ware) {
 
 // creating an empty array for each category
-var ammunition= []
+
 var fireworks = [];
-var demolitions = [];
-var charges = [];
+var destructives = [];
 
-
-
-fact.putThingsInDom = function (categories,types,products){
+ware.insertinDom = function (categories,types,products){
  for (var i in products) {
     if (products[i].type <= 2) {
         fireworks.push(products[i]);
     }
     else {
-        demolitions.push(products[i]);
+        destructives.push(products[i]);
     }
 }
+// CLICK EVENTS///
+$("#fireworks").click(loadFireworks);
+$("#destructives").click(loadDestructives);
 
-
-// $( "#familyFun" ).click(fireworksPop);
-// $( "#destroyThePlanet" ).click(demoPop);
-
-function fireworksPop() {
+function loadFireworks() {
     $("#output").empty();
     fireworks.forEach(function (firework){
-        $("#output").append(`
+        $("#product_details").append(`
         <div class="col-md-4">
         <div class="card" style="background-color: rgba(255, 0, 0, 0.8); color: black; font-style: bolder">
         <h3>Category: ${categories[types[firework.type].category].name}</h3>
@@ -36,10 +32,10 @@ function fireworksPop() {
 
 }
 
-function demoPop () {
+function loadDestructives () {
     $("#output").empty();
-    demolitions.forEach(function (demo){
-        $("#output").append(`
+    destructives.forEach(function (demo){
+        $("#product_details").append(`
         <div class="col-md-4">
         <div class="card" style="background-color: rgba(255, 255, 0, 0.9); color: blue; font-style: bolder">
         <h3>Category: ${categories[types[demo.type].category].name}</h3>
@@ -52,13 +48,13 @@ function demoPop () {
 
 }
 
-return fact;
+return ware;
 
 })
 
-(Factory || {})
+(Warehouse || {})
 
-Factory.loadProducts(Factory.putThingsInDom);
+Warehouse.loadProducts(Warehouse.insertinDom);
 
 
 
