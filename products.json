@@ -29,7 +29,7 @@
                 "id": 4,
                 "type": 0,
                 "name": "Cowboy",
-                "description": "An effect that splits in the sky, for example a coloured star which then splits into four or five other coloured stars."
+                "description": "An effect that splits in the sky"
             },
             "Dog Poo": {
                 "id": 5,
