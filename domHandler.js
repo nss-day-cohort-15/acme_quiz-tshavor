@@ -21,28 +21,71 @@ $("#destructives").click(loadDestructives);
 function loadFireworks() {
     $("#output").empty();
     fireworks.forEach(function (firework){
-        $("#product_details").append(`
-        <div class="col-md-4">
-        <div class="card" style="background-color: rgba(255, 0, 0, 0.8); color: black; font-style: bolder">
-        <h3>Category: ${categories[types[firework.type].category].name}</h3>
-        <h4>Type: ${types[firework.type].name}</h4>
-        <h5>Product Name: ${firework.name}</h5>
-        <p>${firework.description}</p></div></div>
-        `)});
+    	// working copy-don't delete!
+
+        // $("#product_details").append(
+        // 	`
+        // <div class="col-md-4">
+        // <div class="card">
+        // <h3>Category: ${categories[types[firework.type].category].name}</h3>
+        // <h4>Type: ${types[firework.type].name}</h4>
+        // <h5>Product Name: ${firework.name}</h5>
+        // <p>${firework.description}</p></div></div>
+        // `
+
+        // $("#product_details").append(
+        // 	`
+        // <div class="col-md-4">
+        // <div class="card">
+        // <h3>Category: ${categories[types[firework.type].category].name}</h3>
+        // <h4>Type: ${types[firework.type].name}</h4>
+        // <h5>Product Name: ${firework.name}</h5>
+        // <p>${firework.description}</p></div></div>
+        // `
+// revised exmple in rows
+				$("#product_details").append(
+					`
+<h2 class="sub-header">Selcted Products</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Cateogry</th>
+                  <th>Type</th>
+                  <th>Product Name</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>${categories[types[firework.type].category].name}</td>
+                  <td>${types[firework.type].name}</td>
+                  <td>${firework.name}</td>
+                  <td>${firework.description}</td>
+                </tr>
+							</tbody>
+            </table>
+						`
+
+
+
+        )});
 
 }
 
 function loadDestructives () {
     $("#output").empty();
     destructives.forEach(function (demo){
-        $("#product_details").append(`
+        $("#product_details").append(
+        	`
         <div class="col-md-4">
-        <div class="card" style="background-color: rgba(255, 255, 0, 0.9); color: blue; font-style: bolder">
+        <div class="card" >
         <h3>Category: ${categories[types[demo.type].category].name}</h3>
         <h4>Type: ${types[demo.type].name}</h4>
         <h5>Product Name: ${demo.name}</h5>
         <p>${demo.description}</p>
-        <div class="col-md-1"></div></div>`)});
+        <div class="col-md-1"></div></div>`
+        )});
 
 }
 
@@ -56,5 +99,5 @@ return ware;
 
 Warehouse.loadProducts(Warehouse.insertinDom);
 
-
-
+// style="background-color: rgba(255, 0, 0, 0.8); color: black; font-style: bolder"
+// style="background-color: rgba(255, 255, 0, 0.9); color: blue; font-style: bolder"
