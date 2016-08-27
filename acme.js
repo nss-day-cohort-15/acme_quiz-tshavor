@@ -1,31 +1,31 @@
-console.log("acme.js has loaded");
+hconsole.log("acme.js has loaded");
 
 // XML-HTTP CALL HERE (WITH PROMISES, USING PROMISE.ALL)://///////////////////////////////////////////
 
-var Warehouse = (function (ware) {
+var Warehouse = (function(ware) {
 
-var categories = null;
-var types = null;
-var products = null;
+    var categories = null;
+    var types = null;
+    var products = null;
 
-    ware.loadProducts = function (insertinDom){
-      console.log ("function loadProducts is ready!")
-        Promise.all ([
+    ware.loadProducts = function(insertinDom) {
+        console.log("function loadProducts is ready!")
+        Promise.all([
             $.getJSON('categories.json'),
             $.getJSON('types.json'),
             $.getJSON('products.json')
-            ])
+        ])
 
-                .then(function (catalog) {
-                categories = catalog[0].categories
-                types = catalog[1].types
-                products = catalog[2].products[0]
-                insertinDom(categories,types,products)
-                console.log(categories);
-                })
-            }
+        .then(function(catalog) {
+            categories = catalog[0].categories
+            types = catalog[1].types
+            products = catalog[2].products[0]
+            insertinDom(categories, types, products)
+            console.log(categories);
+        })
+    }
 
-return ware;
+    return ware;
 
 })
 
@@ -95,5 +95,3 @@ return ware;
 //   }).then(function(data3){
 //     console.log(data3);
 //   });
-
-

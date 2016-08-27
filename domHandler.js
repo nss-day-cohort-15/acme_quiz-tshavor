@@ -1,61 +1,64 @@
 var Warehouse = (function(ware) {
 
-// creating an empty array for each category
+    // creating an empty array for each category
 
-var fireworks = [];
-var destructives = [];
+    var fireworks = [];
+    var destructives = [];
 
-ware.insertinDom = function (categories,types,products){
- for (var i in products) {
-    if (products[i].type <= 2) {
-        fireworks.push(products[i]);
-    }
-    else {
-        destructives.push(products[i]);
-    }
-}
-// CLICK EVENTS///
-$("#fireworks").click(loadFireworks);
-$("#destructives").click(loadDestructives);
+    ware.insertinDom = function(categories, types, products) {
+        for (var i in products) {
+            if (products[i].type <= 2) {
+                fireworks.push(products[i]);
+            } else {
+                destructives.push(products[i]);
+            }
+        }
+        // CLICK EVENTS///
+        $("#fireworks").click(loadFireworks);
+        $("#destructives").click(loadDestructives);
 
-function loadFireworks() {
-    $("#output").empty();
-    fireworks.forEach(function (firework){
-    	// working copy-don't delete!
+        function loadFireworks() {
+            $("#product_details").empty();
+            fireworks.forEach(function(firework) {
+                // working copy-don't delete!
 
-        $("#product_details").append(
-        	`
+                $("#product_details").append(
+                    `
         <div class="col-md-4">
         <div class="card">
         <h3>Category: ${categories[types[firework.type].category].name}</h3>
         <h4>Type: ${types[firework.type].name}</h4>
         <h5>Product Name: ${firework.name}</h5>
-        <p>${firework.description}</p></div></div>
-        `
+        <p>${firework.description}</p></div>
+        </div>`
 
-        )});
 
-}
+                )
+            });
 
-function loadDestructives () {
-    $("#output").empty();
-    destructives.forEach(function (demo){
-        $("#product_details").append(
-        	`
+        }
+
+        function loadDestructives() {
+            $("#product_details").empty();
+            destructives.forEach(function(demo) {
+                $("#product_details").append(
+                    `
         <div class="col-md-4">
         <div class="card" >
         <h3>Category: ${categories[types[demo.type].category].name}</h3>
         <h4>Type: ${types[demo.type].name}</h4>
         <h5>Product Name: ${demo.name}</h5>
         <p>${demo.description}</p>
-        <div class="col-md-1"></div></div>`
-        )});
+        <div class="col-md-1"></div>
+        </div>`
+                )
+            });
 
-}
+        }
 
-}
+    }
 
-return ware;
+    return ware;
 
 })
 
@@ -65,8 +68,8 @@ Warehouse.loadProducts(Warehouse.insertinDom);
 
 // revised Bootstrap example in table form- to play with firther this weekend
 
-// 				$("#product_details").append(
-// 					`
+//              $("#product_details").append(
+//                  `
 // <h2 class="sub-header">Selcted Products</h2>
 //           <div class="table-responsive">
 //             <table class="table table-striped">
@@ -79,12 +82,12 @@ Warehouse.loadProducts(Warehouse.insertinDom);
 //                 </tr>
 //               </thead>
 //               <tbody>
-//              			<tr>
+//                          <tr>
 //                   <td>${categories[types[firework.type].category].name}</td>
 //                   <td>${types[firework.type].name}</td>
 //                   <td>${firework.name}</td>
 //                   <td>${firework.description}</td>
 //                 </tr>
-// 							</tbody>
+//                          </tbody>
 //             </table>
-// 						`
+//                      `

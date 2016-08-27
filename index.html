@@ -1,42 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="acme.css">
-
+    <link rel="stylesheet" href="acme.css">
     <title>ACME EXPLOSIVES MASTERY EXERCISE</title>
-  </head>
-  <body>
-              <!-- <h3 class="masthead-brand">Our explosives categories:</h3> -->
-              <nav id=navbar>
-                <ul class="nav masthead-nav">
-					<h1>ACME EXPLOSIVES: Product Database</h1>
-                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" id = "destructives" class="btn btn-primary" "active">Destructives</button>
-<button type="button" id = "fireworks" class="btn btn-primary" "active">Fireworks</button>
+</head>
 
-                </ul>
-              </nav>
-            </div>
-          </div>
-            <div id="product_details"></div>
-          </div>
+<body>
+    <nav id=navbar>
+        <h1>ACME EXPLOSIVES: Product Database</h1>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select your product type
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a id="destructives" href="#">Destructives</a></li>
+                <li><a id="fireworks" href="#">Fireworks</a></li>
+            </ul>
         </div>
-      </div>
-    </div>
-
-<script src="/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="acme.js" type="text/javascript"></script>
-<script src="domHandler.js" type="text/javascript"></script>
-
+    </nav>
+    <div id="product_details"></div>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="acme.js" type="text/javascript"></script>
+    <script src="domHandler.js" type="text/javascript"></script>
 </body>
-</html>
 
+</html>

@@ -2,17 +2,16 @@ body {
     background-color: #FFF6C4;
 }
 
-h1{
-color: black;
-
-}
-.card{
-  border: solid;
-  color: black;
-  border-radius: 20px;
+h1 {
+    color: black;
 }
 
+.card {
+    border: solid;
+    color: black;
+    border-radius: 20px;
+}
 
-#navbar{
-  background-color: #E5D578;
+#navbar {
+    background-color: #E5D578;
 }
