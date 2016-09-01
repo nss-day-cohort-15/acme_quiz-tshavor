@@ -17,45 +17,85 @@ var Warehouse = (function(ware) {
         $("#fireworks").click(loadFireworks);
         $("#destructives").click(loadDestructives);
 
+        ////////////WORKING COPY////////////////////////////////
+        // function loadFireworks() {
+        //     $("#product_details").empty();
+        //     fireworks.forEach(function(firework) {
+        //         $("#product_details").append(
+        //             `
+        // <div class="col-md-4">
+        // <div class="card">
+        // <h3>Category: ${categories[types[firework.type].category].name}</h3>
+        // <h4>Type: ${types[firework.type].name}</h4>
+        // <h5>Product Name: ${firework.name}</h5>
+        // <p>${firework.description}</p></div>
+        // <div class="col-md-1"></div>
+        // </div>`
+        //         )
+        //     });
+        // }
+///////////////////REVISED COPY//////////////////////////////////
+     // SPECIAL NOTE: Goggle CHROME has an annoying feature where if it sees an open <div>
+     // it will automatically close it.  Unfortunately, this will not allow our products to display
+     // properly in rows.  To deal with this, we use the modulus as below:
+
         function loadFireworks() {
+
             $("#product_details").empty();
-            fireworks.forEach(function(firework) {
-                // working copy-don't delete!
+            var results= "";
 
-                $("#product_details").append(
-                    `
-        <div class="col-md-4">
-        <div class="card">
-        <h3>Category: ${categories[types[firework.type].category].name}</h3>
-        <h4>Type: ${types[firework.type].name}</h4>
-        <h5>Product Name: ${firework.name}</h5>
-        <p>${firework.description}</p></div>
-        </div>`
+            fireworks.forEach(function(firework, i){
+                if ((i + 1) % 3 === 0) {
+                    results += `<div class= "row">`;
+                }
+                results +=`<div class="col-md-4">
+                            <div class="card">
+                            <h3>Category: ${categories[types[firework.type].category].name}</h3>
+                            <h4>Type: ${types[firework.type].name}</h4>
+                            <h5>Product Name: ${firework.name}</h5>
+                            <p>${firework.description}</p></div>
+                            <div class="col-md-1"></div>
+                            </div>`;
 
-
-                )
+                    if ((i+1) % 3 === 0 || (i+1)===fireworks.length){
+                         results += (`</div>`);
+                        }
             });
+
+            $("#product_details").append(results);
+
 
         }
 
-        function loadDestructives() {
-            $("#product_details").empty();
-            destructives.forEach(function(demo) {
-                $("#product_details").append(
-                    `
-        <div class="col-md-4">
-        <div class="card" >
-        <h3>Category: ${categories[types[demo.type].category].name}</h3>
-        <h4>Type: ${types[demo.type].name}</h4>
-        <h5>Product Name: ${demo.name}</h5>
-        <p>${demo.description}</p>
-        <div class="col-md-1"></div>
-        </div>`
-                )
-            });
+///////////////////////////////////////////////////////////////////////////
+    function loadDestructives() {
 
-        }
+                $("#product_details").empty();
+                var results= "";
 
+                destructives.forEach(function(firework, i){
+                    if ((i + 1) % 3 === 0) {
+                        results += `<div class= "row">`;
+                    }
+                    results +=`<div class="col-md-4">
+                                <div class="card">
+                                <h3>Category: ${categories[types[firework.type].category].name}</h3>
+                                <h4>Type: ${types[firework.type].name}</h4>
+                                <h5>Product Name: ${firework.name}</h5>
+                                <p>${firework.description}</p></div>
+                                <div class="col-md-1"></div>
+                                </div>`;
+
+                        if ((i+1) % 3 === 0 || (i+1)===destructives.length){
+                             results += (`</div>`);
+                            }
+                });
+
+                $("#product_details").append(results);
+
+
+            }
+/////////////////////////////////////////////////////////////////////////
     }
 
     return ware;
@@ -66,28 +106,3 @@ var Warehouse = (function(ware) {
 
 Warehouse.loadProducts(Warehouse.insertinDom);
 
-// revised Bootstrap example in table form- to play with firther this weekend
-
-//              $("#product_details").append(
-//                  `
-// <h2 class="sub-header">Selcted Products</h2>
-//           <div class="table-responsive">
-//             <table class="table table-striped">
-//               <thead>
-//                 <tr>
-//                   <th>Cateogry</th>
-//                   <th>Type</th>
-//                   <th>Product Name</th>
-//                   <th>Description</th>
-//                 </tr>
-//               </thead>
-//               <tbody>
-//                          <tr>
-//                   <td>${categories[types[firework.type].category].name}</td>
-//                   <td>${types[firework.type].name}</td>
-//                   <td>${firework.name}</td>
-//                   <td>${firework.description}</td>
-//                 </tr>
-//                          </tbody>
-//             </table>
-//                      `

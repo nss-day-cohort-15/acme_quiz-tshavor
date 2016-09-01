@@ -1,4 +1,4 @@
-hconsole.log("acme.js has loaded");
+console.log("acme.js has loaded");
 
 // XML-HTTP CALL HERE (WITH PROMISES, USING PROMISE.ALL)://///////////////////////////////////////////
 

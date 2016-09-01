@@ -11,7 +11,7 @@
                 "id": 1,
                 "type": 4,
                 "name": "7.62 x 54mm Russian",
-                "description": "Eastern Bloc military reference round using during combat operations."
+                "description": "Soviet Bloc military reference round using during combat operations."
             },
             ".50 BMG": {
                 "id": 2,
